@@ -1,0 +1,58 @@
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.infoEdit {
+    width: 45%;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+.form input {
+    width: 100%;
+    border: 1px solid var( --input-border-color);
+    border-radius: 5px;
+    padding: 8px;
+    margin: 10px 0;
+    font-family: "kalame";
+    outline: none;
+}
+.form select {
+    outline: none;
+    width: 100%;
+    border: 1px solid var( --input-border-color);
+    border-radius: 5px;
+    padding: 8px;
+    margin: 10px 0;
+    font-family: "kalame";
+}
+.form span {
+    color: var(--alert-color);
+}
+.form textarea {
+    border: 1px solid var(--input-border-color);
+    width: 100%;
+    border-radius: 5px;
+    padding: 8px;
+    margin: 10px 0;
+}
+.form button {
+    width: 30%;
+}
+
+.passwordEdit {
+    width: 50%;
+}
+@media screen and (max-width: 900px) {
+    .container{flex-direction: column;}
+    .infoEdit {width: 70%;margin-bottom: 50px;}
+    .passwordEdit {width: 70%;}
+}
+@media screen and (max-width: 670px) {
+    .form {width: 100%}
+    .infoEdit {width: 80%;}
+    .passwordEdit {width: 80%;}
+}

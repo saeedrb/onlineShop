@@ -1,0 +1,41 @@
+.container {
+    display: flex;
+    width: 100%;
+    line-height: normal;
+    font-size: 14px;
+}
+.features {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+.features div:nth-child(odd) {
+    background-color: #efeeee;
+}
+.feature {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid var(--input-border-color);
+}
+.feature span {
+    font-size: 14px;
+    padding: 10px 0;
+}
+.feature span:first-child{
+    width: 30%;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-start;
+}
+.feature span:nth-child(2) {
+    width: 60%;
+}
+@media screen and (max-width: 750px) {
+    .feature {width: 90%;}
+}
+@media screen and (max-width: 460px) {
+    .feature {flex-direction: column; padding: 5px;}
+    .feature span {width: 100% !important;}
+}

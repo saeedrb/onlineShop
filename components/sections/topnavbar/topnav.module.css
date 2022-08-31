@@ -1,0 +1,77 @@
+.container {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  position: relative;
+  padding: 0 6em;
+}
+.right {
+  display: flex;
+}
+.left {
+  display: flex;
+}
+.links {
+  z-index: 10;
+}
+.links > a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px 10px;
+  border-right: 1px dotted #000;
+}
+.links a:last-child {
+  border-left: 1px dotted #000;
+}
+.bars {
+  padding: 10px;
+  display: none;
+  cursor: pointer;
+}
+.unVisible {
+  display: none;
+}
+.verticalMenu{
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    top: 30px;
+    border: none;
+    background-color: var(--bg-default-color);
+}
+.verticalMenu a {
+    border: none;
+}
+.verticalMenu a:last-child {
+    border: none;
+}
+
+@media screen and (max-width: 800px) {
+  .right {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    top: 38px;
+    border: none;
+    background-color: var(--bg-default-color);
+  }
+  .right a {
+    border: none;
+  }
+  .right a:last-child {
+    border: none;
+  }
+  .bars {
+    display: flex;
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 600px) {
+    .container {padding: 0 3em}
+  }
+  @media screen and (max-width: 300px) {
+    .container {
+      padding: 0;
+    }
+  }

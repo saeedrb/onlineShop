@@ -1,0 +1,6 @@
+export {default as ProductSlider } from './productSlider'
+export {default as ProductList } from './ProductList'
+export {default as Review } from './review'
+export {default as Features } from './features'
+export {default as Comments } from './comments'
+export {default as Attachments } from './Attachments'

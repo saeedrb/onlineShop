@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.header h2 {
+    font-size: 24px;
+    line-height: normal;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+.header span {
+    line-height: normal;
+    font-size: 14px;
+    margin-bottom: 50px;
+}
+.form {
+    line-height: normal;
+    margin-bottom: 50px;
+}
+.form > form{
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    width: 60%;
+}
+.form input, .form textarea {
+    font-family: "kalame";
+    border: 1px solid var(--input-border-color);
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.form span {color: var(--alert-color);margin-bottom: 10px;}
+.form button {
+    width: 70px;
+}
+@media screen and (max-width: 600px) {
+    .form form{
+        width:90%;
+    }
+}

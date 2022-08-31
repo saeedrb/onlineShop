@@ -1,0 +1,38 @@
+.container {
+    width: 300px;
+    height: 300px;
+}
+.slide {
+    display: flex !important;
+    justify-content: center;
+}
+.slide  > img{
+    width: 300px;
+    height: 300px;
+}
+.slider {
+    width: 320px;
+    margin-bottom: 50px !important;
+}
+.dots {
+    width: 320px;
+    height: 100px;
+    display: flex !important;
+    justify-content: space-between;
+}
+.dots li {
+    width: 100px;
+    height: 100px;
+}
+.dots img {
+    width: 100px;
+    height: 100px;
+}
+@media screen and (max-width: 900px) {
+    .dots img {width: 50px; height: 50px;}
+    .container {width: 200px; height: 200px;}
+    .slider {width: 280px;}
+}
+@media screen and (max-width: 610px) {
+    .container {width: 100;display: flex;justify-content: center;}
+}

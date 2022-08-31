@@ -1,0 +1,48 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+.container h3 {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 15px 5px;
+    background-color: var(--bg-default-color);
+    margin-bottom: 40px;
+}
+.form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.form > label , .form > input , .form > select, .form > textarea {
+    margin-bottom: 10px;
+    line-height: normal;
+    font-family: "kalame";
+}
+.form > input {
+    padding: 10px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+}
+.form > textarea {
+    padding: 10px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+}
+.form > select {
+    padding: 10px;
+    border: 1px solid var(--input-border-color);
+    border-radius: 5px;
+}
+.form span {
+    color: var(--alert-color);
+    line-height: normal;
+}
+.form button {
+    width: 80px;
+}
+@media screen and (max-width:900px ) {
+    .form {width: 80%;}
+}

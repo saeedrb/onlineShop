@@ -1,0 +1,83 @@
+.container {
+    display: flex;
+    padding: 50px 0;
+    background-image: url('/media/header2.webp');
+    background-size: cover;
+}
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.searchBox{
+    position: relative;
+}
+.searchIcon {
+    position: absolute;
+    left: 5px;
+    top: 8px;
+    font-size: 24px;
+    color: var(--input-border-color);
+}
+
+
+.searchBox input {
+    height: 40px;
+    background-color: #fff;
+    width: 500px;
+    color: var(--input-placeholder-color);
+    padding: 0 10px;
+    outline: none;
+    border: 1px solid var(--input-border-color);
+}
+.searchBox input:not(:placeholder-shown) ~ i {
+    display: none;
+}
+.logo {
+    width: 70px;
+    height: 40px;
+}
+.logo img {
+    width: 70px;
+    height: 40px;
+}
+.shoppingCart {
+    color: #fff;
+    padding:20px  10px;
+    border-radius: 10px;
+    background-color: var(--important-things-color);
+}
+.shoppingCart a {
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+    padding:20px  10px;
+}
+
+@media screen and (max-width: 800px) {
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .logo {margin-bottom: 20px;}
+    .shoppingCart {margin-top: 20px;}
+
+}
+@media screen and (max-width: 550px) {
+    .searchBox input {
+        width: 350px;
+    }
+}
+@media screen and (max-width: 400px){
+    .searchBox input {
+        width: 250px;
+        font-size: 10px;
+    }
+    .searchIcon {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+}

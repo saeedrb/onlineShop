@@ -1,0 +1,164 @@
+.container {
+  width: 100%;
+  display: flex;
+  background-color: var(--bg-second-color);
+  height: 40px;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  z-index: 100;
+}
+.container a {
+  color: #fff;
+}
+.navbar {
+  display: flex;
+  transition: 0.3s;
+}
+.nav {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+.nav li {
+  transition: 0.3s;
+  position: relative;
+}
+.nav > li:hover > .subMenu {
+  display: block;
+}
+.nav a:hover {
+  background-color: #fff;
+  color: var(--important-things-color);
+}
+.active {
+  background-color: var(--important-things-color);
+}
+.nav a {
+  width: 100%;
+  height: 30px;
+  padding: 8px 10px;
+  transition: 0.3s;
+}
+.subMenuHandler {
+  padding: 0 20px;
+  padding-right: 50px;
+}
+.subMenu {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  top: 27px;
+  width: 120px;
+  overflow: auto;
+  min-width: 100%;
+  border-top: 5px solid var(--important-things-color);
+  transition: 0.3s;
+}
+.subMenu li {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid var(--input-border-color);
+  position: relative;
+}
+.arrowUp {
+  position: absolute;
+  top: -11px;
+  margin: auto;
+  right: 50%;
+  width: 0;
+  height: 0;
+  border-bottom: 6px solid var(--important-things-color);
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+}
+.subMenu a {
+  padding: 10px 0;
+  color: #000;
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+.offers {
+  background-color: var(--important-things-color);
+  padding: 8px 10px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+.offers:hover {
+  background-color: #fff;
+}
+.offers:hover a {
+  color: var(--important-things-color);
+}
+.bars {
+  font-size: 18px;
+  margin-left: 20px;
+  margin-right: 40px;
+  display: none;
+}
+.subMenuHandler {
+  display: none;
+}
+@media screen and (max-width: 800px) {
+  .container {
+    justify-content: space-between;
+  }
+  .navbar {
+    display: none;
+    position: absolute;
+    top: 38px;
+    background-color: var(--bg-second-color);
+    width: 100%;
+  }
+  .nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-height: 40px;
+    padding: 8px 10px;
+    border-bottom: 1px solid var(--input-border-color);
+    
+  }
+  .active {
+    background-color: var(--bg-second-color);
+  }
+  .nav > li > a {
+    padding-right: 30px;
+    margin-bottom: 10px;
+  }
+  .subMenuHandler {
+    display: block;
+    position: absolute;
+    left: 30px;
+    padding: 10px;
+  }
+  .bars {
+    display: flex;
+  }
+  .offers {
+    margin-left: 40px;
+  }
+  .nav a:hover {
+    background-color: var(--bg-second-color);
+    color: #fff;
+  }
+  .subMenu {
+    border-top: none;
+    position: relative;
+    overflow: hidden;
+    top: 0;
+    display: block;
+  }
+}

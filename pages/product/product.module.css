@@ -1,0 +1,122 @@
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.productDetail {
+    display: flex;
+    justify-content: space-between;
+}
+.slider {
+    width: 450px;
+    height: 450px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+.productInfo {
+    display: flex;
+    width: 40%;
+    flex-direction: column;
+    align-items: center;
+}
+.productPrimaryAssets {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    width: 70%;
+}
+
+.productProperty {
+    line-height: normal;
+    font-size: 14px;
+    margin: 5px;
+}
+.productPrice {
+    display: flex;
+    width: 100%;
+    background-color: var(--bg-default-color);
+    padding: 15px 10px;
+    margin-top: 20px;
+    justify-content: space-around;
+    font-size: 18px;
+}
+.price {
+    text-decoration: line-through;
+    color: var(--alert-color);
+}
+
+.offer {
+    color: var(--important-things-color);
+}
+
+.lineThrough {
+    text-decoration: line-through;
+}
+.productHandler {
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    margin-top: 40px;
+    align-items: center;
+    
+}
+.productCountHandler {
+    display: flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+}
+.countHandler {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+}
+.countHandler i {
+    padding: 6px;
+    background-color: var(--bg-default-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.countHandler input {
+    padding: 6px; 
+}
+.productCount {
+    width: 60px;
+    text-align: center;
+    border: 1px solid var(--input-border-color)
+}
+@media screen and (max-width: 1100px) {
+    .productCount {width: 40px;}
+}
+@media screen and (max-width: 1000px) {
+    .productHandler {
+        flex-direction: column;
+    }
+    .productHandler button {
+        margin-top: 20px;
+    }
+    .productCountHandler {
+        width: 100%;
+    }
+    .productPrice {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 900px) {
+    .slider {width: 350px;height: 350px;}
+}
+@media screen and (max-width: 610px) {
+    .productDetail {
+        flex-direction: column;
+        align-items: center;
+    }
+    .slider {margin-bottom: 0;}
+    .productPrimaryAssets {
+        margin-top: 50px;
+        width: 100%;
+    }
+    .productInfo{width: 100%;}
+    .productHandler {width: 100%;}
+}

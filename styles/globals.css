@@ -1,0 +1,86 @@
+@import "./reset.css";
+@import "./fonts.css";
+@import "./variables.css";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 80%;
+  overflow-x: hidden;
+}
+html[dir="rtl"] {
+  direction: rtl;
+}
+html[dir="rtl"] * {
+  direction: rtl;
+}
+html[dir="ltr"] {
+  direction: ltr;
+}
+html[dir="ltr"] * {
+  direction: ltr;
+}
+ 
+a {
+  text-decoration: none;
+}
+body {
+  font-family: var(--first-font), var(--second-font);
+  font-weight: 400;
+  direction: rtl; 
+  width: 100%;
+  height: 100vh;
+  background-color: var(--bg-default-color);
+  min-width: 320px;
+  
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  min-width: 300px;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1500px;
+}
+.displayNone {
+  display: none;
+}
+.displayFlex {
+  display: flex;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2em 6em;
+}
+.mainBox {
+  width: 100%;
+  background: #fff;
+  border-radius: 4px;
+  padding: 1em;
+}
+.slick-arrow::before {
+  color: #468f1e;
+}
+@media screen and (max-width: 780px) {
+  .main {
+    padding: 2em;
+  }
+  .slick-prev {
+    left: -15px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .main {
+    padding: 1em;
+  
+  }
+}

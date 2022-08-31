@@ -1,0 +1,17 @@
+.button {
+  padding: 6px 10px;
+  border-radius: 5px;
+}
+.active {
+  background-color: var(--important-things-color);
+  color: #f2f2f2;
+}
+.disable {
+  color: #FFF;
+}
+.background-red {
+  background-color: var(--alert-color);
+}
+.background-green {
+  background-color: var(--important-things-color);
+}

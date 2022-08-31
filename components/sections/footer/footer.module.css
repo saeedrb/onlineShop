@@ -1,0 +1,126 @@
+.container {
+    display: flex;
+    padding: 0 6em;
+    background-color: #000;
+    color: #fff;
+    padding-top: 40px;
+    line-height: normal;
+}
+.container a {
+    color: #fff;
+    transition: 0.3s;
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+}
+.socials {
+    font-size: 30px;
+     
+}
+.companyData {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    line-height: 2;
+}
+
+.infoBox > h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    line-height: normal;
+}
+.infoBox a:hover {
+    color: var(--important-things-color)
+}
+.infoItem {
+    width: 100%;
+}
+.infoItem > i {
+    margin-left: 10px;
+}
+.companyData > div {
+    margin-left: 10px;
+}
+.companyData > div:nth-child(1) {
+    width: 20%;
+}
+.companyData > div:nth-child(2) {
+    width: 20%;
+}
+.companyData > div:nth-child(3) {
+    width: 30%;
+}
+.companyData > div:nth-child(4) {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+.companyData > div:nth-child(4) > img {
+    width: 150px;
+    height: 150px;
+}
+.links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.socials a {
+    margin: 5px;
+}
+
+@media screen and (max-width: 800px) {
+    .infoBox > h4 {
+        font-size: 14px;
+    }
+    .infoBox > p {
+        font-size: 12px;
+    }
+}
+@media screen and (max-width: 790px) {
+    .companyData {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .infoBox {
+        margin: 10px 0;
+        width: 100% !important;
+        display: flex;
+        justify-content: space-around;
+        
+    }
+    .infoBox > h4 {
+        display: none;
+    }
+    .infoBox > p {
+        text-align: center;
+        font-size: 2vw;
+    }
+    .infoItem {width: auto;}
+}
+@media screen and (max-width: 720px) {
+    .companyData > div:nth-child(4) > img {
+        width: 100px;
+        height: 100px;
+    }
+    .links {
+        flex-direction: column;
+    }
+
+}
+@media screen and (max-width: 620px) {
+        .infoBox {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 500px) {
+    .infoBox > p {
+        font-size: 3vw;
+    }
+
+}

@@ -1,0 +1,83 @@
+.container {
+    width: 100%;
+    display: flex;
+    padding: 50px 30px 0 0;
+    flex-direction: column;
+}
+.menuHeader {
+    width: 100%;
+    font-size: 18px;
+    border-bottom: 1px solid var(--input-border-color);
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+.menu {
+    margin-top: 15px;
+}
+.menuItem {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.menuItem a {
+    color: #000;
+    transition: 0.3s;
+    flex: 1;
+}
+.menuItem i {
+    padding: 10px 15px;
+}
+.menuItem a:hover {
+    color: var(--important-things-color)
+}
+
+.subMenuHandler {
+    cursor: pointer;
+}
+.submenu {
+    position: absolute;
+    left: -600px;
+    top: 0;
+    z-index: 100;
+    background-color: rgba(219, 219, 219, 0.9);
+    max-width: 600px;
+    padding: 25px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    display: none;
+}
+.submenu > li {
+    padding: 20px 15px;
+    font-weight: bold;
+}
+.submenu > li > a {
+    transition: 0.3s;
+}
+@media screen and (max-width: 1080px) {
+    .submenu {max-width: 400px;left: -400px;padding: 10px;}
+    .submenu > li {
+        padding:8px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .submenu {max-width: 380px;left: -380px;padding: 10px;}
+    .menuHeader {
+        font-size: 14px;
+    }
+    .menuItem {font-size: 12px;}
+}
+@media screen and (max-width: 710px) {
+    .submenu {max-width: 320px;left: -320px;padding: 5px;}
+    .submenu > li {padding: 5px;}
+    .menuHeader {
+        font-size: 12px;
+    }
+    .menuItem {font-size: 10px; padding: 7px;}
+}

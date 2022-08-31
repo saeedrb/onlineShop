@@ -1,0 +1,10 @@
+:root {
+    --bg-default-color: #dcdbdb;
+    --bg-second-color: #555;
+    --input-placeholder-color: #333;
+    --input-border-color: #ccc;
+    --important-things-color: rgb(70, 143, 29);
+    --first-font: "kalame";
+    --second-font: "GoogleSans";
+    --alert-color: #ec4444;
+}

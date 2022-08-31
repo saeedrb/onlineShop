@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.container > div {
+    width: 25%;
+}
+@media screen and (max-width: 1070px) {
+    .container > div {
+        width: 30%;
+    }
+}
+@media screen and (max-width: 420px) {
+    .container > div {
+        width: 50%;
+    }
+}

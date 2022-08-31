@@ -1,0 +1,57 @@
+@font-face {
+    font-family: "kalame";
+    src: url("./../public/fonts/KalamehFaNum-Medium.ttf"),
+      url("./../public/fonts/KalamehFaNum-Medium.woff");
+    font-weight: 500;
+  }
+  
+  @font-face {
+    font-family: "kalame";
+    src: url("./../public/fonts/KalamehFaNum-SemiBold.ttf"),
+      url("./../public/fonts/KalamehFaNum-SemiBold.woff");
+    font-weight: 600;
+  }
+  @font-face {
+    font-family: "kalame";
+    src: url("./../public/fonts/KalamehFaNum-Bold.ttf"),
+      url("./../public/fonts/KalamehFaNum-Bold.woff");
+    font-weight: 700;
+  }
+  
+  @font-face {
+    font-family: "kalame";
+    src: url("./../public/fonts/KalamehFaNum-Black.ttf"),
+      url("./../public/fonts/KalamehFaNum-Black.woff");
+    font-weight: 900;
+  }
+  @font-face {
+    font-family: "GoogleSans";
+    src: url("./../public/fonts/GoogleSans-Regular.ttf"),
+      url("./../public/fonts/GoogleSans-Regular.eot"),
+      url("./../public/fonts/GoogleSans-Regular.woff");
+    font-weight: 400;
+  }
+  
+  @font-face {
+    font-family: "GoogleSans";
+    src: url("./../public/fonts/GoogleSans-Medium.ttf"),
+      url("./../public/fonts/GoogleSans-Medium.eot"),
+      url("./../public/fonts/GoogleSans-Medium.woff");
+    font-weight: 500;
+  }
+  
+  @font-face {
+    font-family: "GoogleSans";
+    src: url("./../public/fonts/GoogleSans-Bold.ttf"),
+      url("./../public/fonts/GoogleSans-Bold.eot"),
+      url("./../public/fonts/GoogleSans-Bold.woff");
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: "kalame";
+    src: url("./../public/fonts/KalamehFaNum-Regular.ttf"),
+      url("./../public/fonts/KalamehFaNum-Regular.woff");
+    font-weight: 400;
+  }
+  
+  

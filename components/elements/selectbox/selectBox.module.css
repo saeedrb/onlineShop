@@ -1,0 +1,6 @@
+.select {
+    outline : none;
+    border: 1px solid var(--input-border-color);
+    font-family: 'kalame';
+    width: 200px;
+}
